@@ -1,11 +1,9 @@
-
+package DSA.basicArray;
 import javax.swing.*;
 
 public class largestElement {
     public static void main(String[] args) {
-        
-    
-    String a=JOptionPane.showInputDialog("Enter Array Size");
+     String a=JOptionPane.showInputDialog("Enter Array Size");
     int n=Integer.parseInt(a);
     int arr[]=new int[n];
     for(int i=0;i<n;i++){
@@ -17,7 +15,7 @@ System.out.println("Entered Array is");
         System.out.println(arr[j]);
     }
     int max=arr[0];
-    for(int k=0;k<n;k++){
+    for(int k=1;k<n;k++){
         if(arr[k]>max){
             max=arr[k];
         }
